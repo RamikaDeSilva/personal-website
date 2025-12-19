@@ -39,7 +39,7 @@ export function Books() {
                       {book.takeaway}
                     </p>
                     <Badge variant="secondary" className="bg-secondary text-xs">
-                      Applied to {book.appliedTo}
+                      Applies to: {book.appliedTo}
                     </Badge>
                   </div>
                 ))}

@@ -9,21 +9,21 @@ export interface Book {
 
 export const books: Book[] = [
   {
-    id: "zero-to-one",
-    title: "Zero to One",
-    author: "Peter Thiel",
+    id: "ai-agents",
+    title: "Principles of Building AI Agents",
+    author: "Sam Bhagwat",
     takeaway:
-      "Building something 10x better matters more than incremental improvements. Monopolies create lasting value.",
-    appliedTo: "product strategy",
+      "Designing AI systems as modular, goal-driven agents rather than static features.",
+    appliedTo: "AI product architecture",
     category: "Product & Strategy",
   },
   {
-    id: "lean-startup",
-    title: "The Lean Startup",
-    author: "Eric Ries",
+    id: "mom-test",
+    title: "The Mom Test",
+    author: "Rob Fitzpatrick",
     takeaway:
-      "Ship fast, measure what matters, learn from real users. Avoid building in a vacuum.",
-    appliedTo: "MVP decisions",
+      "Good products come from good questions and honest user conversations.",
+    appliedTo: "user interviews & validation",
     category: "Product & Strategy",
   },
   {
@@ -31,32 +31,32 @@ export const books: Book[] = [
     title: "Deep Work",
     author: "Cal Newport",
     takeaway:
-      "Sustained focus is the competitive advantage. Distraction is the default—deep work requires discipline.",
+      "Sustained focus is a competitive advantage in a distracted world.",
     appliedTo: "daily routine",
-    category: "Focus & Essentialism",
+    category: "Focus & Mental Models",
   },
   {
-    id: "essentialism",
-    title: "Essentialism",
-    author: "Greg McKeown",
+    id: "atomic-habits",
+    title: "Atomic Habits",
+    author: "James Clear",
     takeaway:
-      "Do fewer things, better. Say no to good opportunities to make room for great ones.",
-    appliedTo: "prioritization",
-    category: "Focus & Essentialism",
+      "Small systems, repeated consistently, compound into meaningful change.",
+    appliedTo: "habit-building & consistency",
+    category: "Focus & Mental Models",
   },
   {
-    id: "almanack",
-    title: "The Almanack of Naval Ravikant",
-    author: "Eric Jorgenson",
+    id: "moonwalking-einstein",
+    title: "Moonwalking with Einstein",
+    author: "Joshua Foer",
     takeaway:
-      "Code, media, and capital are forms of leverage. Your output should scale without scaling your time.",
-    appliedTo: "career design",
-    category: "Leverage & Career",
+      "A look into memory, learning, and how much skill is shaped by training and systems—told through a compelling personal journey.",
+    appliedTo: "memory & learning systems",
+    category: "What Stuck With Me",
   },
 ];
 
 export const bookCategories = [
   "Product & Strategy",
-  "Focus & Essentialism",
-  "Leverage & Career",
+  "Focus & Mental Models",
+  "What Stuck With Me",
 ];
