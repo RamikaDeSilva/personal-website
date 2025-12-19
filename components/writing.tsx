@@ -68,7 +68,7 @@ export function Writing() {
             delay: 0, // First item, no delay
           }}
         >
-          <Card className="mb-8 border bg-card p-6 shadow-sm">
+          <Card className="mb-8 border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md">
             <div className="flex items-start justify-between">
               <div className="flex-1">
                 <Badge
@@ -104,7 +104,7 @@ export function Writing() {
               delay: (index + 1) * 0.08, // 80ms stagger, offset by 1 for featured post
             }}
           >
-            <Card className="border bg-card p-6 shadow-sm transition-colors hover:border-accent/20">
+            <Card className="border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-border/80 hover:shadow-md">
               <div className="flex items-start justify-between">
                 <h3 className="flex-1 text-lg font-medium text-accent hover:text-accent/80">
                   <a href={`#${post.id}`}>{post.title}</a>
