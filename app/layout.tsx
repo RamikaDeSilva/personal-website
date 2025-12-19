@@ -9,11 +9,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Jordan Martinez - Building AI Tools for Language Learning",
+  title: "Ramika De Silva — Software Engineer & Startup Builder",
   description:
     "Founder of Fluencia. I build AI-powered tools for language learning. Passionate about shipping fast, learning from users, and creating measurable impact.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   keywords: [
-    "Jordan Martinez",
+    "Ramika De Silva",
     "Fluencia",
     "AI",
     "language learning",
@@ -22,20 +25,20 @@ export const metadata: Metadata = {
     "builder",
     "startup",
   ],
-  authors: [{ name: "Jordan Martinez" }],
-  creator: "Jordan Martinez",
+  authors: [{ name: "Ramika De Silva" }],
+  creator: "Ramika De Silva",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://jordanmartinez.com",
-    title: "Jordan Martinez - Building AI Tools for Language Learning",
+    title: "Ramika De Silva — Software Engineer & Startup Builder",
     description:
       "Founder of Fluencia. I build AI-powered tools for language learning. Passionate about shipping fast, learning from users, and creating measurable impact.",
-    siteName: "Jordan Martinez",
+    siteName: "Ramika De Silva",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jordan Martinez - Building AI Tools for Language Learning",
+    title: "Ramika De Silva — Software Engineer & Startup Builder",
     description:
       "Founder of Fluencia. I build AI-powered tools for language learning.",
     creator: "@yourusername",
