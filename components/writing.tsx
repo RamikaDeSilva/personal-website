@@ -51,8 +51,7 @@ export function Writing() {
           Writing
         </h2>
         <p className="mb-12 text-lg text-muted-foreground">
-          I write to clarify my thinking while building in public. Mostly lessons
-          learned from shipping, failing, and iterating.
+          Notes on building, learning, and figuring things out as I go.
         </p>
       </motion.div>
 
