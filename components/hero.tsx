@@ -9,22 +9,21 @@ export function Hero() {
       </h1>
 
       <p className="mb-10 text-xl text-muted-foreground sm:text-2xl">
-        Building AI tools for language learning
+        Exploring the intersection of business and technology to build impactful software
       </p>
 
       <div className="mb-12 space-y-4 text-lg leading-relaxed text-foreground/80">
         <p>
-          Currently founder of{" "}
+          I'm currently building{" "}
           <a
-            href="https://fluencia.app"
+            href="https://lumela.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent underline decoration-accent/30 transition-colors hover:decoration-accent"
           >
-            Fluencia
+            Lumela
           </a>
-          —an AI-powered platform helping people achieve conversational fluency
-          in new languages.
+          , a story-driven language learning platform that turns language practice into a narrative that feels personal, familiar, and human—grounded in real experiences.
         </p>
 
         <p>
