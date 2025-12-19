@@ -57,7 +57,7 @@ export function Footer() {
         </div>
 
         <p className="text-sm text-muted-foreground">
-          © 2024 Ramika De Silva. Built with intention, shipped with speed.
+          © 2026 Ramika De Silva. Built with intention, shipped with speed.
         </p>
       </div>
     </footer>
