@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 export function Hero() {
   return (
@@ -19,9 +20,10 @@ export function Hero() {
             href="https://lumela.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent underline decoration-accent/30 transition-colors hover:decoration-accent"
+            className="inline-flex items-center gap-1 text-accent underline decoration-accent/30 transition-colors hover:decoration-accent"
           >
             Lumela
+            <ExternalLink className="h-4 w-4" />
           </a>
           , a story-driven language learning platform that turns language practice into a narrative that feels personal, familiar, and human—grounded in real experiences.
         </p>
