@@ -7,6 +7,7 @@ export interface Project {
   featured?: boolean;
   image?: string;
   hackathon?: string;
+  link?: string;
 }
 
 export const projects: Project[] = [
@@ -19,6 +20,7 @@ export const projects: Project[] = [
     tags: ["React Native", "Python", "OpenAI", "PostgreSQL"],
     featured: true,
     image: "/projects/lumela.png",
+    link: "https://lumela.app",
   },
   {
     id: "trakl",
@@ -29,6 +31,7 @@ export const projects: Project[] = [
     tags: ["FastAPI", "PostgreSQL", "OpenAI", "Vue"],
     hackathon: "Built at HackMIT '25 (Massachusetts Institute of Technology)",
     image: "/projects/trakl.png",
+    link: "https://github.com/RamikaDeSilva/trakl-HackMIT-25",
   },
   {
     id: "weblink",
@@ -39,5 +42,6 @@ export const projects: Project[] = [
     tags: ["TypeScript", "React", "OpenAI", "Supabase"],
     hackathon: "Built at CalHacks '25 (UC Berkeley)",
     image: "/projects/weblink.png",
+    link: "https://github.com/dakshshahani/weblink",
   },
 ];

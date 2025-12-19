@@ -76,41 +76,48 @@ export function Projects() {
           viewport={{ once: true, amount: 0.2 }}
           variants={featuredCardVariants}
         >
-          <Card className="mb-12 border-accent/40 bg-card p-8 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md">
-            <div className="mb-4">
-              <Badge
-                variant="secondary"
-                className="mb-4 bg-accent/10 text-accent hover:bg-accent/20"
-              >
-                Featured
-              </Badge>
-              <h3 className="mb-1 text-2xl font-semibold text-foreground">
-                {featuredProject.title}
-              </h3>
-              {featuredProject.hackathon && (
-                <p className="mb-3 text-xs text-muted-foreground">
-                  {featuredProject.hackathon}
+          <a
+            href={featuredProject.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <Card className="mb-12 cursor-pointer border-accent/40 bg-card p-8 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md">
+              <div className="mb-4">
+                <Badge
+                  variant="secondary"
+                  className="mb-4 bg-accent/10 text-accent hover:bg-accent/20"
+                >
+                  Featured
+                </Badge>
+                <h3 className="mb-1 text-2xl font-semibold text-foreground">
+                  {featuredProject.title}
+                </h3>
+                {featuredProject.hackathon && (
+                  <p className="mb-3 text-xs text-muted-foreground">
+                    {featuredProject.hackathon}
+                  </p>
+                )}
+                <p className="mb-3 line-clamp-2 text-base leading-relaxed text-foreground/80">
+                  {featuredProject.description}
                 </p>
-              )}
-              <p className="mb-3 line-clamp-2 text-base leading-relaxed text-foreground/80">
-                {featuredProject.description}
-              </p>
-              <p className="mb-5 text-sm font-medium text-accent">
-                {featuredProject.impact}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {featuredProject.tags.map((tag) => (
-                  <Badge
-                    key={tag}
-                    variant="secondary"
-                    className="bg-secondary text-xs"
-                  >
-                    {tag}
-                  </Badge>
-                ))}
+                <p className="mb-5 text-sm font-medium text-accent">
+                  {featuredProject.impact}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {featuredProject.tags.map((tag) => (
+                    <Badge
+                      key={tag}
+                      variant="secondary"
+                      className="bg-secondary text-xs"
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </a>
         </motion.div>
       )}
 
@@ -129,33 +136,40 @@ export function Projects() {
               delay: index * 0.09, // 90ms stagger
             }}
           >
-            <Card className="border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-border/80 hover:shadow-md">
-              <h3 className="mb-1 text-xl font-semibold text-foreground">
-                {project.title}
-              </h3>
-              {project.hackathon && (
-                <p className="mb-3 text-xs text-muted-foreground">
-                  {project.hackathon}
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Card className="cursor-pointer border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-border/80 hover:shadow-md">
+                <h3 className="mb-1 text-xl font-semibold text-foreground">
+                  {project.title}
+                </h3>
+                {project.hackathon && (
+                  <p className="mb-3 text-xs text-muted-foreground">
+                    {project.hackathon}
+                  </p>
+                )}
+                <p className="mb-3 line-clamp-2 text-sm leading-relaxed text-foreground/80">
+                  {project.description}
                 </p>
-              )}
-              <p className="mb-3 line-clamp-2 text-sm leading-relaxed text-foreground/80">
-                {project.description}
-              </p>
-              <p className="mb-4 text-xs font-medium text-accent">
-                {project.impact}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <Badge
-                    key={tag}
-                    variant="secondary"
-                    className="bg-secondary text-xs"
-                  >
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
+                <p className="mb-4 text-xs font-medium text-accent">
+                  {project.impact}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <Badge
+                      key={tag}
+                      variant="secondary"
+                      className="bg-secondary text-xs"
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+              </Card>
+            </a>
           </motion.div>
         ))}
       </div>
