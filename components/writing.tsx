@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -68,24 +69,26 @@ export function Writing() {
             delay: 0, // First item, no delay
           }}
         >
-          <Card className="mb-8 border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md">
-            <div className="flex items-start justify-between">
-              <div className="flex-1">
-                <Badge
-                  variant="secondary"
-                  className="mb-3 bg-accent/10 text-accent hover:bg-accent/20"
-                >
-                  Featured
-                </Badge>
-                <h3 className="mb-2 text-xl font-semibold text-accent hover:text-accent/80">
-                  <a href={`#${featuredPost.id}`}>{featuredPost.title}</a>
-                </h3>
+          <Link href={`/writing/${featuredPost.slug}`}>
+            <Card className="mb-8 cursor-pointer border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md">
+              <div className="flex items-start justify-between">
+                <div className="flex-1">
+                  <Badge
+                    variant="secondary"
+                    className="mb-3 bg-accent/10 text-accent hover:bg-accent/20"
+                  >
+                    Featured
+                  </Badge>
+                  <h3 className="mb-2 text-xl font-semibold text-accent hover:text-accent/80">
+                    {featuredPost.title}
+                  </h3>
+                </div>
+                <span className="ml-4 text-sm text-muted-foreground">
+                  {featuredPost.date}
+                </span>
               </div>
-              <span className="ml-4 text-sm text-muted-foreground">
-                {featuredPost.date}
-              </span>
-            </div>
-          </Card>
+            </Card>
+          </Link>
         </motion.div>
       )}
 
@@ -104,16 +107,18 @@ export function Writing() {
               delay: (index + 1) * 0.08, // 80ms stagger, offset by 1 for featured post
             }}
           >
-            <Card className="border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-border/80 hover:shadow-md">
-              <div className="flex items-start justify-between">
-                <h3 className="flex-1 text-lg font-medium text-accent hover:text-accent/80">
-                  <a href={`#${post.id}`}>{post.title}</a>
-                </h3>
-                <span className="ml-4 text-sm text-muted-foreground">
-                  {post.date}
-                </span>
-              </div>
-            </Card>
+            <Link href={`/writing/${post.slug}`}>
+              <Card className="cursor-pointer border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-border/80 hover:shadow-md">
+                <div className="flex items-start justify-between">
+                  <h3 className="flex-1 text-lg font-medium text-accent hover:text-accent/80">
+                    {post.title}
+                  </h3>
+                  <span className="ml-4 text-sm text-muted-foreground">
+                    {post.date}
+                  </span>
+                </div>
+              </Card>
+            </Link>
           </motion.div>
         ))}
       </div>
