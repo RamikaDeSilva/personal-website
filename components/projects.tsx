@@ -31,13 +31,18 @@ export function Projects() {
             >
               Featured
             </Badge>
-            <h3 className="mb-3 text-2xl font-semibold text-foreground">
+            <h3 className="mb-1 text-2xl font-semibold text-foreground">
               {featuredProject.title}
             </h3>
-            <p className="mb-4 text-base leading-relaxed text-foreground/80">
+            {featuredProject.hackathon && (
+              <p className="mb-3 text-xs text-muted-foreground">
+                {featuredProject.hackathon}
+              </p>
+            )}
+            <p className="mb-3 line-clamp-2 text-base leading-relaxed text-foreground/80">
               {featuredProject.description}
             </p>
-            <p className="mb-6 text-sm font-medium text-accent">
+            <p className="mb-5 text-sm font-medium text-accent">
               {featuredProject.impact}
             </p>
             <div className="flex flex-wrap gap-2">
@@ -56,13 +61,18 @@ export function Projects() {
       )}
 
       {/* Other Projects Grid */}
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2">
         {otherProjects.map((project) => (
           <Card key={project.id} className="border bg-card p-6 shadow-sm">
-            <h3 className="mb-2 text-xl font-semibold text-foreground">
+            <h3 className="mb-1 text-xl font-semibold text-foreground">
               {project.title}
             </h3>
-            <p className="mb-4 text-sm leading-relaxed text-foreground/80">
+            {project.hackathon && (
+              <p className="mb-3 text-xs text-muted-foreground">
+                {project.hackathon}
+              </p>
+            )}
+            <p className="mb-3 line-clamp-2 text-sm leading-relaxed text-foreground/80">
               {project.description}
             </p>
             <p className="mb-4 text-xs font-medium text-accent">

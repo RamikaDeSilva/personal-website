@@ -6,44 +6,38 @@ export interface Project {
   tags: string[];
   featured?: boolean;
   image?: string;
+  hackathon?: string;
 }
 
 export const projects: Project[] = [
   {
-    id: "fluencia",
-    title: "Fluencia",
+    id: "lumela",
+    title: "Lumela",
     description:
-      "AI-powered language learning platform that adapts to individual learning patterns. Uses spaced repetition and contextual immersion to help learners achieve conversational fluency faster.",
-    impact:
-      "12,000+ active learners across 8 languages • 89% learner retention after 3 months",
-    tags: ["React", "Python", "OpenAI", "PostgreSQL", "Vercel"],
+      "Story-driven language learning app that personalizes lessons to the learner's interests and cultural context.",
+    impact: "In progress • building MVP + waitlist",
+    tags: ["React Native", "Python", "OpenAI", "PostgreSQL"],
     featured: true,
-    image: "/projects/fluencia.png",
+    image: "/projects/lumela.png",
   },
   {
-    id: "devmerge-cli",
-    title: "DevMerge CLI",
+    id: "trakl",
+    title: "Trakl",
     description:
-      "Open-source CLI that automates Git workflows and deployment pipelines.",
-    impact: "3,200+ GitHub stars • Used by teams at Stripe and Vercel",
-    tags: ["TypeScript", "Node.js", "Docker"],
-    image: "/projects/devmerge.png",
+      "AI study planner that generates personalized schedules with adaptive roadmaps and progress tracking.",
+    impact: "Improved study consistency by ~30% during pilot",
+    tags: ["FastAPI", "PostgreSQL", "OpenAI", "Vue"],
+    hackathon: "Built at HackMIT '25 (Massachusetts Institute of Technology)",
+    image: "/projects/trakl.png",
   },
   {
-    id: "codereview-ai",
-    title: "CodeReview AI",
+    id: "weblink",
+    title: "WebLink",
     description:
-      "Chrome extension using GPT-4 to suggest improvements during pull request reviews.",
-    impact: "Saved 200+ hours of review time for early adopters",
-    tags: ["TypeScript", "OpenAI API", "Chrome Extension"],
-    image: "/projects/codereview.png",
-  },
-  {
-    id: "momentum-board",
-    title: "Momentum Board",
-    description: "Minimalist productivity dashboard for makers who ship daily.",
-    impact: "Featured on Product Hunt • 500+ daily active users",
-    tags: ["React", "Firebase", "Tailwind"],
-    image: "/projects/momentum.png",
+      "Chrome extension that clusters saved links using semantic similarity into an interactive knowledge graph.",
+    impact: "Semantic clustering via cosine similarity + embeddings",
+    tags: ["TypeScript", "React", "OpenAI", "Supabase"],
+    hackathon: "Built at CalHacks '25 (UC Berkeley)",
+    image: "/projects/weblink.png",
   },
 ];
