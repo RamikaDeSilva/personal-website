@@ -19,7 +19,7 @@ export function Footer() {
 
         <div className="mb-12 flex justify-center gap-6">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:ramikadesilva0@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/60 transition-colors hover:text-foreground"
@@ -28,7 +28,7 @@ export function Footer() {
             <Mail className="h-6 w-6" />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/RamikaDeSilva"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/60 transition-colors hover:text-foreground"
@@ -37,7 +37,7 @@ export function Footer() {
             <Github className="h-6 w-6" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/ramikadesilva"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/60 transition-colors hover:text-foreground"
@@ -46,7 +46,7 @@ export function Footer() {
             <Linkedin className="h-6 w-6" />
           </a>
           <a
-            href="https://twitter.com/yourusername"
+            href="https://x.com/RamikaDeSilva_"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground/60 transition-colors hover:text-foreground"
@@ -57,7 +57,7 @@ export function Footer() {
         </div>
 
         <p className="text-sm text-muted-foreground">
-          © 2024 Jordan Martinez. Built with intention, shipped with speed.
+          © 2024 Ramika De Silva. Built with intention, shipped with speed.
         </p>
       </div>
     </footer>

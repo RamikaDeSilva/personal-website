@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section id="home" className="mx-auto max-w-4xl px-6 py-32 lg:px-8">
       <h1 className="mb-8 text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-        Jordan Martinez
+        Ramika De Silva
       </h1>
 
       <p className="mb-10 text-xl text-muted-foreground sm:text-2xl">
