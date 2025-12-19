@@ -76,7 +76,7 @@ export function Projects() {
           viewport={{ once: true, amount: 0.2 }}
           variants={featuredCardVariants}
         >
-          <Card className="mb-12 border-accent/40 bg-card p-8 shadow-sm">
+          <Card className="mb-12 border-accent/40 bg-card p-8 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md">
             <div className="mb-4">
               <Badge
                 variant="secondary"
@@ -129,7 +129,7 @@ export function Projects() {
               delay: index * 0.09, // 90ms stagger
             }}
           >
-            <Card className="border bg-card p-6 shadow-sm">
+            <Card className="border bg-card p-6 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-border/80 hover:shadow-md">
               <h3 className="mb-1 text-xl font-semibold text-foreground">
                 {project.title}
               </h3>
