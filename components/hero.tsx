@@ -15,7 +15,7 @@ export function Hero() {
 
       <div className="mb-12 space-y-4 text-lg leading-relaxed text-foreground/80">
         <p>
-          I'm currently building{" "}
+          I&apos;m currently building{" "}
           <a
             href="https://lumela.app"
             target="_blank"
