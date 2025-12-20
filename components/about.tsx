@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function About() {
   return (
     <section
@@ -8,37 +10,48 @@ export function About() {
         About
       </h2>
 
-      <div className="space-y-6 text-lg leading-relaxed text-foreground/80">
-        <p>
-          I&apos;ve been interested in building things with code since I was 13.
-          What started as curiosity and small side projects grew into working
-          through college, early-stage startups, and now building my own
-          products. I&apos;m currently a second-year Business and Computer
-          Science (BUCS) student at UBC, and I&apos;ve learned that the hardest
-          part isn&apos;t writing code—it&apos;s figuring out what to build and
-          who you&apos;re building it for.
-        </p>
+      <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-12">
+        {/* Circular headshot image */}
+        <div className="flex-shrink-0">
+          <div className="relative h-48 w-48 overflow-hidden rounded-full border-2 border-border">
+            <Image
+              src="/headshot.png"
+              alt="Ramika De Silva"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
 
-        <p>
-          My approach is to learn early from real users and iterate based on
-          what they actually do. I care about clean, well-structured software,
-          but I care even more about building things that create real value. To
-          me, good engineering lives at the intersection of strong technical
-          foundations, user understanding, and business context.
-        </p>
+        {/* Text content */}
+        <div className="space-y-6 text-lg leading-relaxed text-foreground/80">
+          <p>
+            I&apos;ve been writing code for 7 years—starting with side projects in
+            college, then working at early-stage startups, and now building my
+            own products. I&apos;ve learned that the hardest part isn&apos;t writing
+            code—it&apos;s figuring out what to build and who to build it for.
+          </p>
 
-        <p>
-          <span className="font-semibold text-foreground">Core belief:</span>{" "}
-          The best products are built by combining solid engineering with clear
-          thinking about people and markets. Shipping early, learning quickly,
-          and staying close to users beats building in isolation.
-        </p>
+          <p>
+            My approach: ship early, talk to users, iterate based on what they
+            actually do (not what they say). I care about craft, but I care more
+            about solving real problems. Code is a tool for creating leverage,
+            not an end in itself.
+          </p>
 
-        <p>
-          Outside of building, I&apos;m interested in how software can
-          personalize learning at scale and how small teams can move faster by
-          staying focused and close to their users.
-        </p>
+          <p>
+            <span className="font-semibold text-foreground">Core belief:</span>{" "}
+            Most people overthink and undership. The best way to validate an idea is to put
+            something real in front of users and see if they come back. Everything else is theory.
+          </p>
+
+          <p>
+            Outside of building, I&apos;m fascinated by AI&apos;s potential to personalize education at scale, spaced
+            repetition systems, and how independent builders can compete with venture-backed
+            companies by moving faster and staying closer to their users.
+          </p>
+        </div>
       </div>
     </section>
   );
