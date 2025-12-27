@@ -64,7 +64,7 @@ export function Projects() {
           Proof of Work
         </h2>
         <p className="text-lg text-muted-foreground">
-          Projects that have reached real users and created measurable outcomes.
+          From idea to shipped builds with measurable progress and learning
         </p>
       </motion.div>
 
