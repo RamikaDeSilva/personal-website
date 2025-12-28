@@ -1,13 +1,29 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export function Hero() {
   return (
     <section id="home" className="mx-auto max-w-4xl px-6 py-32 lg:px-8">
-      <h1 className="mb-8 text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-        Ramika De Silva
-      </h1>
+      {/* Animation container - shows above name on mobile, to the left on desktop */}
+      <div className="mb-8 flex flex-col items-start gap-8 lg:flex-row lg:items-center">
+        {/* Lottie Animation */}
+        <div className="w-32 h-32 lg:w-40 lg:h-40 flex-shrink-0">
+          <DotLottieReact
+            src="/robot.lottie"
+            loop
+            autoplay
+          />
+        </div>
+
+        {/* Name heading */}
+        <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+          Ramika De Silva
+        </h1>
+      </div>
 
       <p className="mb-10 text-xl text-muted-foreground sm:text-2xl">
         Exploring the intersection of business and technology to build impactful software
