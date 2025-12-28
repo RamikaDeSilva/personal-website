@@ -24,7 +24,7 @@ export function Hero() {
       <div className="md:flex md:gap-16 lg:gap-20 md:items-center">
         {/* Left column: text content */}
         <div className="flex-1">
-          <h1 className="mb-8 text-4xl font-bold tracking-tight text-foreground whitespace-nowrap sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="mb-8 text-5xl font-bold tracking-tight text-foreground whitespace-nowrap sm:text-6xl md:text-6xl lg:text-7xl">
             Ramika De Silva
           </h1>
 
