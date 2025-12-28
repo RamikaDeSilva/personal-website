@@ -9,8 +9,8 @@ export function Hero() {
   return (
     <section id="home" className="mx-auto max-w-4xl px-6 pt-16 pb-32 md:py-32 lg:px-8">
       {/* Mobile-only robot - centered above heading */}
-      <div className="mb-8 flex justify-center md:hidden">
-        <div className="w-32 h-32 aspect-square shrink-0 opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]">
+      <div className="mb-12 flex justify-center md:hidden">
+        <div className="w-48 h-48 aspect-square shrink-0 opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]">
           <DotLottieReact
             src="/robot.lottie"
             loop
