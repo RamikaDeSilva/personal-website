@@ -34,6 +34,11 @@ export function Hero() {
         </p>
       </div>
 
+      <div className="mb-5 flex items-center gap-3">
+        <span className="h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.6)]"></span>
+        <p className="text-sm font-medium text-muted-foreground">Vancouver, BC · UBC</p>
+      </div>
+
       <div className="flex flex-col gap-4 sm:flex-row">
         <Button asChild size="lg" className="rounded-md">
           <Link href="#projects">View Projects</Link>
