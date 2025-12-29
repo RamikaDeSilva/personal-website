@@ -25,9 +25,17 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="mx-auto flex h-16 max-w-7xl items-center px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
+        {/* Brand */}
+        <Link
+          href="#home"
+          className="text-xl text-muted-foreground transition-colors hover:text-foreground/80"
+        >
+          RD
+        </Link>
+
         {/* Desktop Navigation */}
-        <div className="ml-auto hidden md:flex md:items-center md:space-x-8">
+        <div className="hidden md:flex md:items-center md:space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
