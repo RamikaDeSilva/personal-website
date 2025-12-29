@@ -22,9 +22,25 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+        isScrolled
+          ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+          : "border-b border-transparent bg-transparent"
+      }`}
+    >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
         {/* Brand */}
         <Link
