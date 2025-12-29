@@ -17,14 +17,39 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#books", label: "Books" },
   { href: "#writing", label: "Writing" },
+  { href: "#contact", label: "Connect" },
 ];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
+    <nav
+      className={`sticky top-0 z-50 w-full mt-6 transition-all duration-300 ${
+        isScrolled
+          ? "border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+          : "border-b border-transparent bg-transparent"
+      }`}
+    >
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 py-8 lg:px-8">
+        {/* Brand */}
+        <Link
+          href="#home"
+          className="text-xl text-muted-foreground transition-colors hover:text-foreground/80"
+        >
+          RD
+        </Link>
+
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:space-x-8">
           {navLinks.map((link) => (
@@ -69,11 +94,9 @@ export function Navbar() {
             </SheetContent>
           </Sheet>
         </div>
-
-        {/* Right side spacer for desktop */}
-        <div className="hidden md:block" />
       </div>
     </nav>
   );
 }
+
 
