@@ -17,6 +17,7 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#books", label: "Books" },
   { href: "#writing", label: "Writing" },
+  { href: "#contact", label: "Connect" },
 ];
 
 export function Navbar() {
@@ -76,4 +77,5 @@ export function Navbar() {
     </nav>
   );
 }
+
 
