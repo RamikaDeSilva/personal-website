@@ -11,13 +11,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Ramika De Silva — Software Engineer & Startup Builder",
   description:
-    "Founder of Fluencia. I build AI-powered tools for language learning. Passionate about shipping fast, learning from users, and creating measurable impact.",
+    "Building Lumela, a story-driven language learning platform. Exploring the intersection of business and technology to build impactful software.",
   icons: {
     icon: "/favicon.ico",
   },
   keywords: [
     "Ramika De Silva",
-    "Fluencia",
+    "Lumela",
     "AI",
     "language learning",
     "founder",
@@ -30,17 +30,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://jordanmartinez.com",
+    url: "https://ramikadesilva.com",
     title: "Ramika De Silva — Software Engineer & Startup Builder",
     description:
-      "Founder of Fluencia. I build AI-powered tools for language learning. Passionate about shipping fast, learning from users, and creating measurable impact.",
+      "Building Lumela, a story-driven language learning platform. Exploring the intersection of business and technology to build impactful software.",
     siteName: "Ramika De Silva",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ramika De Silva — Software Engineer & Startup Builder",
     description:
-      "Founder of Fluencia. I build AI-powered tools for language learning.",
+      "Building Lumela, a story-driven language learning platform. Exploring the intersection of business and technology to build impactful software.",
     creator: "@yourusername",
   },
   robots: {
