@@ -44,12 +44,11 @@ export function Hero() {
                 Lumela
                 <ExternalLink className="h-4 w-4" />
               </a>
-              , a story-driven language learning platform that turns language practice into a narrative that feels personal, familiar, and human—grounded in real experiences.
+              , a full‑stack language learning platform built with Next.js (App Router), React, TypeScript, PostgreSQL, and Prisma, integrating OpenAI GPT‑4, embeddings, and pgvector for personalized, story‑driven learning.
             </p>
 
             <p>
-              I believe in shipping fast, learning from real users, and building
-              tools that create measurable impact.
+              I focus on building server‑rendered applications, RESTful APIs, relational data models, and production AI workflows, with attention to performance, reliability, and scalability.
             </p>
           </div>
 
