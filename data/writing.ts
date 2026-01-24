@@ -18,7 +18,7 @@ export const writingPosts: WritingPost[] = [
   {
     id: "ai-language-app",
     slug: "ai-language-app",
-    title: "Why I'm Building a Language Learning App instead of a B2B SaaS",
+    title: "Why am I building a language learning app?",
     subtitle: "Choosing passion over popularity in product development",
     date: "December 19, 2025",
     readTime: "4 min read",
@@ -27,27 +27,27 @@ export const writingPosts: WritingPost[] = [
       {
         type: "quote",
         content:
-          "\"You're doing B2C? You're cooked bud.\"",
+          "\"A language learning app. Is that your best use of time?\"",
       },
       {
         type: "paragraph",
         content:
-          "Are words that no one has said to me directly - but run through my head often. Open LinkedIn, TikTok, X, and everyone is opening a B2B SaaS.",
+          "Are words that no one has said to me directly - but run through my head sometimes.",
       },
       {
         type: "paragraph",
         content:
-          "Dropping out? Thats the norm nowadays.",
+          "Building a language learning app is more than choosing a tech stack.",
       },
       {
         type: "paragraph",
         content:
-          "B2B (Business-to-Business) models where you sell to other organisations are the popular choice for these new founders - easier marketing, network reach, and larger lump sums per sale. B2C (Business-to-Consumer) on the other hand is seen as the devils choice. Marketing hell, retention nightmares, the competition from the giants - negativity surrounds the sales model.",
+          "How do people learn best? What makes it engaging but also informative? Isn't that a lot of work, from deployment to development?",
       },
       {
         type: "paragraph",
         content:
-          "Why am I doing this then?",
+          "And yeah these are valid concerns. And there are simpler projcets to build. But when I first decided to work on this project, It didn't come from resume padding but identifying a problem.",
       },
       {
         type: "heading",
@@ -75,17 +75,12 @@ export const writingPosts: WritingPost[] = [
       },
       {
         type: "heading",
-        content: "Lumela - The new Path Forward",
+        content: "Lumela - The new path forward",
       },
       {
         type: "paragraph",
         content:
           "Lumela strives to solve this frustration many new learners experience. Instead of focusing on drills and memorizing grammar rules, Lumela will make language learning about you: a conversation about your experiences and what your interests are. Through story-driven modes of learning, you'll learn and remember details far better than from an exam or flashcard relevant towards your life. I know this is a short snippet but the opportunities to learn are truly endless!",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Exciting things are coming up for us - check us out at Lumela.app :)",
       },
       {
         type: "heading",
@@ -94,7 +89,17 @@ export const writingPosts: WritingPost[] = [
       {
         type: "paragraph",
         content:
-          "B2C is hard. Its exhausting and as a solo founder, I know that this process is not going to be easy. But Im excited: excited beyond belief. Because I see Lumela as something bigger than balance sheets and income statements, but an app that can help bring the world, our cultures, and experiences just that tad-bit closer together :)",
+          "Being a CS Student in 2026 is hard.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "LeetCode, job applications, projects, and GPA are all factors that go into whether you 'make it or not'.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "But I didn't choose this field purely for the title, but to build projects that have postive impact and let me learn something new everyday.",
       },
       {
         type: "paragraph",
