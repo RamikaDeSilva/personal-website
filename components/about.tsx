@@ -11,11 +11,11 @@ export function About() {
       </h2>
 
       <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-12">
-        {/* Circular headshot image */}
+        {/* Circular headshot */}
         <div className="flex-shrink-0">
           <div className="relative h-48 w-48 overflow-hidden rounded-full border-2 border-border">
             <Image
-              src="/headshot.png"
+              src="/profile-about.png"
               alt="Ramika De Silva"
               fill
               className="object-cover"
@@ -29,7 +29,7 @@ export function About() {
           <p>
             I&apos;ve been building software since I was 13, starting with small
             side projects and gradually moving toward larger, production‑level
-            applications. I&apos;m currently a second‑year Business and Computer
+            applications. I&apos;m currently a third‑year Business and Computer
             Science (BUCS) student at UBC, where my work sits at the intersection
             of software engineering, systems design, and applied AI.
           </p>
