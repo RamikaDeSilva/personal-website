@@ -9,21 +9,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ramika De Silva — Software Engineer & Startup Builder",
+  title: "Ramika De Silva — Software Engineer",
   description:
-    "Building Lumela, a story-driven language learning platform. Exploring the intersection of business and technology to build impactful software.",
+    "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building Lumela, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
   icons: {
     icon: "/favicon.ico",
   },
   keywords: [
     "Ramika De Silva",
+    "software engineer",
+    "full-stack developer",
     "Lumela",
-    "AI",
+    "TypeScript",
+    "Next.js",
+    "React",
+    "PostgreSQL",
+    "applied AI",
     "language learning",
-    "founder",
-    "developer",
-    "builder",
-    "startup",
   ],
   authors: [{ name: "Ramika De Silva" }],
   creator: "Ramika De Silva",
@@ -31,16 +33,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://ramikadesilva.com",
-    title: "Ramika De Silva — Software Engineer & Startup Builder",
+    title: "Ramika De Silva — Software Engineer",
     description:
-      "Building Lumela, a story-driven language learning platform. Exploring the intersection of business and technology to build impactful software.",
+      "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building Lumela, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
     siteName: "Ramika De Silva",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ramika De Silva — Software Engineer & Startup Builder",
+    title: "Ramika De Silva — Software Engineer",
     description:
-      "Building Lumela, a story-driven language learning platform. Exploring the intersection of business and technology to build impactful software.",
+      "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building Lumela, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
     creator: "@yourusername",
   },
   robots: {
