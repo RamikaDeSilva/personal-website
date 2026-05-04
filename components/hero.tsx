@@ -31,7 +31,7 @@ export function Hero() {
       {/* Desktop: 2-column layout with text on left, profile picture on right */}
       <div className="md:flex md:gap-16 lg:gap-20 md:items-center">
         {/* Left column: text content */}
-        <div className="flex-1">
+        <div className="flex-1 text-center md:text-left px-4 md:px-0">
           <h1 className="mb-8 text-5xl font-bold tracking-tight text-foreground whitespace-nowrap sm:text-6xl md:text-6xl lg:text-7xl">
             Ramika De Silva
           </h1>
@@ -60,12 +60,12 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="mb-5 flex items-center gap-3">
+          <div className="mb-5 flex items-center justify-center gap-3 md:justify-start">
             <span className="h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.6)]"></span>
             <p className="text-sm font-medium text-muted-foreground">Vancouver, BC · UBC</p>
           </div>
 
-          <div className="flex flex-col gap-4 sm:flex-row">
+          <div className="flex flex-col gap-4 sm:flex-row justify-center md:justify-start">
             <Button asChild size="lg" className="rounded-md">
               <Link href="#projects">View Projects</Link>
             </Button>
