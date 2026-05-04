@@ -12,21 +12,9 @@ export function About() {
         About
       </h2>
 
-      <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-12">
-        {/* Robot */}
-        <div className="flex-shrink-0 flex items-center justify-center">
-          <div className="w-full max-w-[280px] lg:max-w-[320px] opacity-80">
-            <DotLottieReact
-              src="/robot.lottie"
-              loop
-              autoplay
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-
+      <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12 items-start">
         {/* Text content */}
-        <div className="space-y-6 text-lg leading-relaxed text-foreground/80">
+        <div className="space-y-5 text-base leading-relaxed text-foreground/80 lg:text-lg">
           <p>
             I&apos;ve been building software since I was 13, starting with small
             side projects and gradually moving toward larger, production‑level
@@ -57,6 +45,18 @@ export function About() {
             Outside of work, I enjoy learning new languages 💬 and playing
             electric guitar 🎸
           </p>
+        </div>
+
+        {/* Robot */}
+        <div className="flex items-center justify-center lg:justify-end">
+          <div className="w-full max-w-[350px] lg:max-w-[400px] opacity-90">
+            <DotLottieReact
+              src="/robot.lottie"
+              loop
+              autoplay
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
     </section>

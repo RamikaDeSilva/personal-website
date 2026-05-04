@@ -7,10 +7,17 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section id="home" className="mx-auto max-w-4xl px-6 pt-16 pb-32 md:py-32 lg:px-8">
+    <>
+      <style>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+      `}</style>
+      <section id="home" className="mx-auto max-w-4xl px-6 pt-16 pb-32 md:py-32 lg:px-8">
       {/* Mobile-only profile picture - centered above heading */}
       <div className="mb-12 flex justify-center md:hidden">
-        <div className="relative h-64 w-64 shrink-0">
+        <div className="relative h-64 w-64 shrink-0 drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] hover:drop-shadow-[0_25px_50px_rgba(0,0,0,0.2)] transition-all duration-500" style={{ animation: 'float 4s ease-in-out infinite' }}>
           <Image
             src="/profile-about.png"
             alt="Ramika De Silva"
@@ -70,7 +77,7 @@ export function Hero() {
 
         {/* Right column: profile picture (desktop only) */}
         <div className="hidden md:flex md:items-center md:justify-center flex-shrink-0">
-          <div className="relative h-96 w-96">
+          <div className="relative h-96 w-96 drop-shadow-[0_30px_60px_rgba(0,0,0,0.2)] hover:drop-shadow-[0_40px_80px_rgba(0,0,0,0.25)] transition-all duration-500 hover:scale-[1.02]" style={{ animation: 'float 5s ease-in-out infinite' }}>
             <Image
               src="/profile-about.png"
               alt="Ramika De Silva"
@@ -82,5 +89,6 @@ export function Hero() {
         </div>
       </div>
     </section>
+    </>
   );
 }
