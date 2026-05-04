@@ -64,7 +64,7 @@ export function Experience() {
         className="mb-10"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={headingVariants}
       >
         <h2 className="mb-3 text-4xl font-bold tracking-tight text-foreground">
@@ -79,7 +79,7 @@ export function Experience() {
         className="space-y-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.15 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={listContainerVariants}
       >
         {experience.map((item) => (
@@ -128,7 +128,7 @@ export function Experience() {
         className="mt-14"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={skillsBlockVariants}
       >
         <h3 className="mb-6 text-2xl font-semibold tracking-tight text-foreground">

@@ -57,7 +57,7 @@ export function Projects() {
         className="mb-6"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
         variants={headingVariants}
       >
         <h2 className="mb-3 text-4xl font-bold tracking-tight text-foreground">
@@ -73,7 +73,7 @@ export function Projects() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={featuredCardVariants}
         >
           <a
@@ -82,7 +82,7 @@ export function Projects() {
             rel="noopener noreferrer"
             className="block"
           >
-            <Card className="mb-12 cursor-pointer border-accent/40 bg-card p-8 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md">
+            <Card className="mb-12 cursor-pointer border-accent/40 bg-card p-8 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-md will-change-transform">
               <div className="mb-4">
                 <Badge
                   variant="secondary"
@@ -128,7 +128,7 @@ export function Projects() {
             key={project.id}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
             variants={projectCardVariants}
             transition={{
               duration: 0.32,

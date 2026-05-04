@@ -3,27 +3,35 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
-    <section id="home" className="mx-auto max-w-4xl px-6 pt-16 pb-32 md:py-32 lg:px-8">
-      {/* Mobile-only robot - centered above heading */}
+    <>
+      <style>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+      `}</style>
+      <section id="home" className="mx-auto max-w-4xl px-6 pt-16 pb-32 md:py-32 lg:px-8">
+      {/* Mobile-only profile picture - centered above heading */}
       <div className="mb-12 flex justify-center md:hidden">
-        <div className="w-48 h-48 aspect-square shrink-0 opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]">
-          <DotLottieReact
-            src="/robot.lottie"
-            loop
-            autoplay
-            className="w-full h-full"
+        <div className="relative h-64 w-64 shrink-0 drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] hover:drop-shadow-[0_25px_50px_rgba(0,0,0,0.2)] transition-all duration-500" style={{ animation: 'float 4s ease-in-out infinite' }}>
+          <Image
+            src="/profile-about.png"
+            alt="Ramika De Silva"
+            fill
+            className="object-cover rounded-2xl"
+            priority
           />
         </div>
       </div>
 
-      {/* Desktop: 2-column layout with text on left, robot on right */}
+      {/* Desktop: 2-column layout with text on left, profile picture on right */}
       <div className="md:flex md:gap-16 lg:gap-20 md:items-center">
         {/* Left column: text content */}
-        <div className="flex-1">
+        <div className="flex-1 text-center md:text-left px-4 md:px-0">
           <h1 className="mb-8 text-5xl font-bold tracking-tight text-foreground whitespace-nowrap sm:text-6xl md:text-6xl lg:text-7xl">
             Ramika De Silva
           </h1>
@@ -52,12 +60,12 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="mb-5 flex items-center gap-3">
+          <div className="mb-5 flex items-center justify-center gap-3 md:justify-start">
             <span className="h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.6)]"></span>
             <p className="text-sm font-medium text-muted-foreground">Vancouver, BC · UBC</p>
           </div>
 
-          <div className="flex flex-col gap-4 sm:flex-row">
+          <div className="flex flex-col gap-4 sm:flex-row justify-center md:justify-start">
             <Button asChild size="lg" className="rounded-md">
               <Link href="#projects">View Projects</Link>
             </Button>
@@ -67,18 +75,20 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right column: robot (desktop only) */}
+        {/* Right column: profile picture (desktop only) */}
         <div className="hidden md:flex md:items-center md:justify-center flex-shrink-0">
-          <div className="w-full max-w-[280px] lg:max-w-[320px] opacity-80">
-            <DotLottieReact
-              src="/robot.lottie"
-              loop
-              autoplay
-              className="w-full h-auto"
+          <div className="relative h-96 w-96 drop-shadow-[0_30px_60px_rgba(0,0,0,0.2)] hover:drop-shadow-[0_40px_80px_rgba(0,0,0,0.25)] transition-all duration-500 hover:scale-[1.02]" style={{ animation: 'float 5s ease-in-out infinite' }}>
+            <Image
+              src="/profile-about.png"
+              alt="Ramika De Silva"
+              fill
+              className="object-cover rounded-2xl"
+              priority
             />
           </div>
         </div>
       </div>
     </section>
+    </>
   );
 }

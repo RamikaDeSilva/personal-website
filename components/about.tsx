@@ -1,31 +1,20 @@
-import Image from "next/image";
+"use client";
+
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export function About() {
   return (
     <section
       id="about"
-      className="mx-auto max-w-4xl px-6 py-24 lg:px-8 lg:py-32"
+      className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32"
     >
       <h2 className="mb-12 text-4xl font-bold tracking-tight text-foreground">
         About
       </h2>
 
-      <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-12">
-        {/* Circular headshot */}
-        <div className="flex-shrink-0">
-          <div className="relative h-48 w-48 overflow-hidden rounded-full border-2 border-border">
-            <Image
-              src="/profile-about.png"
-              alt="Ramika De Silva"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-        </div>
-
+      <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12 items-start">
         {/* Text content */}
-        <div className="space-y-6 text-lg leading-relaxed text-foreground/80">
+        <div className="space-y-5 text-base leading-relaxed text-foreground/80 lg:text-lg">
           <p>
             I&apos;ve been building software since I was 13, starting with small
             side projects and gradually moving toward larger, production‑level
@@ -56,6 +45,18 @@ export function About() {
             Outside of work, I enjoy learning new languages 💬 and playing
             electric guitar 🎸
           </p>
+        </div>
+
+        {/* Robot */}
+        <div className="flex items-center justify-center lg:justify-end">
+          <div className="w-full max-w-[350px] lg:max-w-[400px] opacity-90">
+            <DotLottieReact
+              src="/robot.lottie"
+              loop
+              autoplay
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
     </section>
