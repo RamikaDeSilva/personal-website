@@ -6,7 +6,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="mx-auto max-w-4xl px-6 py-24 lg:px-8 lg:py-32"
+      className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32"
     >
       <h2 className="mb-12 text-4xl font-bold tracking-tight text-foreground">
         About
