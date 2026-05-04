@@ -3,24 +3,25 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
     <section id="home" className="mx-auto max-w-4xl px-6 pt-16 pb-32 md:py-32 lg:px-8">
-      {/* Mobile-only robot - centered above heading */}
+      {/* Mobile-only profile picture - centered above heading */}
       <div className="mb-12 flex justify-center md:hidden">
-        <div className="w-48 h-48 aspect-square shrink-0 opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]">
-          <DotLottieReact
-            src="/robot.lottie"
-            loop
-            autoplay
-            className="w-full h-full"
+        <div className="relative h-64 w-64 shrink-0">
+          <Image
+            src="/profile-about.png"
+            alt="Ramika De Silva"
+            fill
+            className="object-cover rounded-2xl"
+            priority
           />
         </div>
       </div>
 
-      {/* Desktop: 2-column layout with text on left, robot on right */}
+      {/* Desktop: 2-column layout with text on left, profile picture on right */}
       <div className="md:flex md:gap-16 lg:gap-20 md:items-center">
         {/* Left column: text content */}
         <div className="flex-1">
@@ -67,14 +68,15 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right column: robot (desktop only) */}
+        {/* Right column: profile picture (desktop only) */}
         <div className="hidden md:flex md:items-center md:justify-center flex-shrink-0">
-          <div className="w-full max-w-[280px] lg:max-w-[320px] opacity-80">
-            <DotLottieReact
-              src="/robot.lottie"
-              loop
-              autoplay
-              className="w-full h-auto"
+          <div className="relative h-96 w-96">
+            <Image
+              src="/profile-about.png"
+              alt="Ramika De Silva"
+              fill
+              className="object-cover rounded-2xl"
+              priority
             />
           </div>
         </div>

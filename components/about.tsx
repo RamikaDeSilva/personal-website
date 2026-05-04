@@ -1,4 +1,6 @@
-import Image from "next/image";
+"use client";
+
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export function About() {
   return (
@@ -11,15 +13,14 @@ export function About() {
       </h2>
 
       <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-12">
-        {/* Circular headshot */}
-        <div className="flex-shrink-0">
-          <div className="relative h-48 w-48 overflow-hidden rounded-full border-2 border-border">
-            <Image
-              src="/profile-about.png"
-              alt="Ramika De Silva"
-              fill
-              className="object-cover"
-              priority
+        {/* Robot */}
+        <div className="flex-shrink-0 flex items-center justify-center">
+          <div className="w-full max-w-[280px] lg:max-w-[320px] opacity-80">
+            <DotLottieReact
+              src="/robot.lottie"
+              loop
+              autoplay
+              className="w-full h-auto"
             />
           </div>
         </div>
