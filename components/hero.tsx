@@ -17,7 +17,7 @@ export function Hero() {
       <section id="home" className="mx-auto max-w-4xl px-6 pt-16 pb-32 md:py-32 lg:px-8">
       {/* Mobile-only profile picture - centered above heading */}
       <div className="mb-12 flex justify-center md:hidden">
-        <div className="relative h-64 w-64 shrink-0 drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] hover:drop-shadow-[0_25px_50px_rgba(0,0,0,0.2)] transition-all duration-500" style={{ animation: 'float 4s ease-in-out infinite' }}>
+        <div className="relative h-56 w-56 shrink-0 drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] hover:drop-shadow-[0_25px_50px_rgba(0,0,0,0.2)] transition-all duration-500" style={{ animation: 'float 4s ease-in-out infinite' }}>
           <Image
             src="/profile-about.png"
             alt="Ramika De Silva"
@@ -31,7 +31,7 @@ export function Hero() {
       {/* Desktop: 2-column layout with text on left, profile picture on right */}
       <div className="md:flex md:gap-16 lg:gap-20 md:items-center">
         {/* Left column: text content */}
-        <div className="flex-1 text-center md:text-left px-4 md:px-0">
+        <div className="flex-1 text-center md:text-left">
           <h1 className="mb-8 text-5xl font-bold tracking-tight text-foreground whitespace-nowrap sm:text-6xl md:text-6xl lg:text-7xl">
             Ramika De Silva
           </h1>
