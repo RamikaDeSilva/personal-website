@@ -92,20 +92,23 @@ export function Experience() {
                 {item.logo && (
                   <div
                     className={cn(
-                      "relative h-12 w-12 shrink-0 overflow-hidden rounded-md border",
-                      item.logoFit === "cover" ? "bg-[#1B1733]" : "bg-white p-1"
+                      "flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-md border",
+                      item.logoFit === "cover"
+                        ? "bg-[#2C2544]"
+                        : "bg-white p-1.5"
                     )}
                   >
                     <Image
                       src={item.logo}
                       alt={`${item.company} logo`}
-                      fill
-                      sizes="48px"
-                      className={
+                      width={48}
+                      height={48}
+                      className={cn(
+                        "h-full w-full",
                         item.logoFit === "cover"
                           ? "object-cover"
                           : "object-contain"
-                      }
+                      )}
                     />
                   </div>
                 )}

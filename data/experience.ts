@@ -30,7 +30,7 @@ export const experience: ExperienceItem[] = [
       "Engineering evidence-gated verification pipelines, benchmark reproduction suites, and execution trace monitors to validate AI-generated artifacts for correctness and reproducibility.",
     ],
     skillTags: ["Python", "TypeScript", "Multi-agent systems", "Verification"],
-    logo: "/logos/huawei.jpg",
+    logo: "/logos/huawei.png",
   },
   {
     id: "nwplus",
@@ -42,7 +42,7 @@ export const experience: ExperienceItem[] = [
       "Engaged 1,000+ prospective partners and contributed to a $10K+ sponsorship pipeline by architecting automated GTM data pipelines and outbound sequences using n8n and Apollo.io.",
     ],
     skillTags: ["GTM", "n8n", "Apollo.io", "Automation"],
-    logo: "/logos/nwplus.jpg",
+    logo: "/logos/nwplus.png",
     logoFit: "cover",
   },
   {
