@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Ramika De Silva — Software Engineer",
   description:
-    "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building Lumela, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
+    "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building my500, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Ramika De Silva",
     "software engineer",
     "full-stack developer",
-    "Lumela",
+    "my500",
     "TypeScript",
     "Next.js",
     "React",
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
     url: "https://ramikadesilva.com",
     title: "Ramika De Silva — Software Engineer",
     description:
-      "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building Lumela, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
+      "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building my500, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
     siteName: "Ramika De Silva",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ramika De Silva — Software Engineer",
     description:
-      "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building Lumela, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
+      "Full-stack software engineer focused on production web applications, reliable APIs, and applied AI. Building my500, a story-driven language learning platform with Next.js, TypeScript, and PostgreSQL.",
     creator: "@yourusername",
   },
   robots: {
