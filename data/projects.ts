@@ -12,15 +12,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "lumela",
-    title: "Lumela",
+    id: "my500",
+    title: "my500",
     description:
-      "Story-driven language learning app that personalizes lessons to the learner's interests and cultural context.",
-    impact: "In progress • building MVP + waitlist",
-    tags: ["React Native", "Python", "OpenAI", "PostgreSQL"],
+      "AI language platform with Next.js App Router, React Native (Expo), and Postgres, serving LLM-generated story arcs and practice kits.",
+    impact:
+      "Monorepo with Zod API contracts, RevenueCat entitlements, and Redis rate-limiting on LLM endpoints",
+    tags: ["Next.js", "React Native", "PostgreSQL", "Zod"],
     featured: true,
     image: "/projects/lumela.png",
     link: "https://lumela.app",
+  },
+  {
+    id: "aegis",
+    title: "Aegis Agent",
+    description:
+      "Autonomous red-team AI agent that analyzes GitHub pull requests for database vulnerabilities, then posts remediation summaries on the PR.",
+    impact:
+      "LangGraph state machine driving sqlmap and nuclei scanners via async tool pipelines",
+    tags: ["Python", "LangGraph", "OpenAI", "sqlmap", "nuclei"],
+    featured: true,
+    hackathon: "Built at Cursor Hackathon '26",
   },
   {
     id: "trakl",

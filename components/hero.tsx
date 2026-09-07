@@ -49,7 +49,7 @@ export function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-accent underline decoration-accent/30 transition-colors hover:decoration-accent"
               >
-                Lumela
+                my500
                 <ExternalLink className="h-4 w-4" />
               </a>
               , a full‑stack language learning platform built with Next.js (App Router), React, TypeScript, PostgreSQL, and Prisma, integrating OpenAI GPT‑4, embeddings, and pgvector for personalized, story‑driven learning.

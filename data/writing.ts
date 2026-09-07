@@ -75,12 +75,12 @@ export const writingPosts: WritingPost[] = [
       },
       {
         type: "heading",
-        content: "Lumela - The new path forward",
+        content: "my500 - The new path forward",
       },
       {
         type: "paragraph",
         content:
-          "Lumela strives to solve this frustration many new learners experience. Instead of focusing on drills and memorizing grammar rules, Lumela will make language learning about you: a conversation about your experiences and what your interests are. Through story-driven modes of learning, you'll learn and remember details far better than from an exam or flashcard relevant towards your life. I know this is a short snippet but the opportunities to learn are truly endless!",
+          "my500 strives to solve this frustration many new learners experience. Instead of focusing on drills and memorizing grammar rules, my500 will make language learning about you: a conversation about your experiences and what your interests are. Through story-driven modes of learning, you'll learn and remember details far better than from an exam or flashcard relevant towards your life. I know this is a short snippet but the opportunities to learn are truly endless!",
       },
       {
         type: "heading",

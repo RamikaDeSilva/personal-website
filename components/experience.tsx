@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { experience, technicalSkills } from "@/data/experience";
+import { cn } from "@/lib/utils";
 
 export function Experience() {
   const shouldReduceMotion = useReducedMotion();
@@ -71,7 +73,8 @@ export function Experience() {
           Experience
         </h2>
         <p className="text-lg text-muted-foreground">
-          Roles and internships across GTM engineering and applied AI.
+          Roles and internships across software engineering, applied AI, and
+          go-to-market systems.
         </p>
       </motion.div>
 
@@ -85,21 +88,46 @@ export function Experience() {
         {experience.map((item) => (
           <motion.div key={item.id} variants={cardVariants}>
             <Card className="border bg-card p-6 shadow-sm md:p-8">
-              <div className="mb-4">
-                <h3 className="text-xl font-semibold tracking-tight text-foreground md:text-2xl">
-                  {item.company}
-                </h3>
-                <p className="mt-1 text-lg font-medium text-foreground">
-                  {item.title}
-                </p>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  {item.dateRange} · {item.location}
-                </p>
-                {item.tagline && (
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {item.tagline}
-                  </p>
+              <div className="mb-4 flex items-start gap-4">
+                {item.logo && (
+                  <div
+                    className={cn(
+                      "flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-md border",
+                      item.logoFit === "cover"
+                        ? "bg-[#2C2544]"
+                        : "bg-white p-1.5"
+                    )}
+                  >
+                    <Image
+                      src={item.logo}
+                      alt={`${item.company} logo`}
+                      width={48}
+                      height={48}
+                      className={cn(
+                        "h-full w-full",
+                        item.logoFit === "cover"
+                          ? "object-cover"
+                          : "object-contain"
+                      )}
+                    />
+                  </div>
                 )}
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-xl font-semibold tracking-tight text-foreground md:text-2xl">
+                    {item.company}
+                  </h3>
+                  <p className="mt-1 text-lg font-medium text-foreground">
+                    {item.title}
+                  </p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {item.dateRange} · {item.location}
+                  </p>
+                  {item.tagline && (
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      {item.tagline}
+                    </p>
+                  )}
+                </div>
               </div>
 
               <ul className="mb-6 list-disc space-y-2 pl-5 text-base leading-relaxed text-foreground/80">
